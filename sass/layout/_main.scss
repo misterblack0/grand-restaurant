@@ -1,5 +1,4 @@
 .main {
-  max-height: 100vh;
   max-width: 100wh;
   background-image: url(/img/bg-pattern.jpg);
   background-repeat: repeat;
@@ -66,28 +65,39 @@
     background-repeat: no-repeat;
     background-position: right;
   }
+}
 
-  &__about {
-    height: 100vh;
-    background-image: url(/img/bg-about.jpg);
-    display: flex;
-    justify-content: center;
+.about {
+  height: 135vh;
+  background-image: url(/img/bg-about.jpg);
+  display: flex;
+  justify-content: center;
 
-    &-content {
-      height: 40rem;
-      width: 70rem;
+  &__content {
+    height: 40rem;
+    width: 70rem;
 
-      align-items: center;
-      margin-top: 10rem;
-      justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10rem;
+    justify-content: space-evenly;
 
-      & h1 {
-        line-height: 1;
-      }
-
-      & p {
-        width: 55rem;
-      }
+    & h1 {
+      line-height: 1;
     }
+
+    & p {
+      width: 55rem;
+    }
+  }
+}
+
+.blog {
+  margin-top: -10rem;
+
+  & h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
   }
 }
