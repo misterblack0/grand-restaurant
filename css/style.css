@@ -1,0 +1,256 @@
+:root {
+  --color-primary: ;
+  --color-primary-light: ;
+  --color-primary-dark: ;
+  --color-secondary: ;
+  --color-secondary-light: ;
+  --color-tertiary: ;
+  --color-tertiary-light: ;
+  --color-grey-dark: #777;
+  --color-grey-dark-2: #888;
+  --color-grey-dark-3: #333;
+  --color-grey-dark: #777;
+  --color-grey-dark-2: #888;
+  --color-grey-dark-3: #333; }
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block; }
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em; }
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #000; }
+
+.big-heading {
+  font-size: 4rem;
+  font-weight: 500; }
+
+.heading {
+  font-size: 2.4rem; }
+
+.medium-heading {
+  font-size: 1.5rem; }
+
+.paragraph {
+  font-size: 1.3rem; }
+
+/* .flow {
+  --flow-space: 1em;
+}  
+
+.flow > * + * { 
+  margin-top: var(--flow-space);
+}
+
+.bg-primary {
+  background: ;
+}
+
+.bg-secondary {
+  background: ;
+}
+
+.color-primary {
+  color: ;
+}
+
+.color-secondary {
+  color: ;
+}
+ */
+.flow {
+  margin: 0 25%; }
+
+.flex-c {
+  display: flex;
+  flex-direction: column; }
+
+.header {
+  max-height: 100vh;
+  max-width: 100wh; }
+  .header:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: url("/img/skewed-print.png"); }
+
+#bgvid {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0; }
+
+.navbar {
+  height: 6%;
+  width: 50%;
+  position: absolute;
+  top: 2rem;
+  left: 25%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between; }
+  .navbar__logo {
+    width: 20rem; }
+  .navbar__menu {
+    width: 55%; }
+  .navbar__menu-items {
+    height: 100%;
+    display: flex;
+    align-items: center; }
+  .navbar__menu-items li {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+  .navbar__menu-item {
+    height: 100%;
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0 2rem;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 3rem; }
+  .navbar__menu-item:hover {
+    transition: background-color 0.5s;
+    background-color: rgba(128, 128, 128, 0.26); }
+
+.main {
+  max-height: 100vh;
+  max-width: 100wh;
+  background-image: url(/img/bg-pattern.jpg);
+  background-repeat: repeat;
+  padding-top: 10rem; }
+  .main__menu-container {
+    height: 70rem;
+    width: 50%;
+    background-color: #c4c0b3;
+    display: flex;
+    border-radius: 0.5rem;
+    overflow: hidden; }
+  .main__menu {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 3% auto;
+    gap: 2rem; }
+    .main__menu-item {
+      display: flex;
+      align-items: center;
+      margin: 0 4rem; }
+      .main__menu-item:first-child {
+        height: 10rem;
+        width: 85%;
+        flex: 1;
+        justify-content: center;
+        align-items: flex-start; }
+        .main__menu-item:first-child p {
+          color: #b39568; }
+      .main__menu-item:nth-child(2) {
+        padding-top: 7rem; }
+      .main__menu-item:last-child {
+        padding-bottom: 2rem; }
+      .main__menu-item:not(:last-child) {
+        border-bottom: 1px solid #b5b1a5; }
+      .main__menu-item--name {
+        padding-right: 5rem; }
+      .main__menu-item--price {
+        width: 15%; }
+  .main__menu-img {
+    flex: 1;
+    background-image: url(/img/bg-menu.jpg);
+    background-repeat: no-repeat;
+    background-position: right; }
+  .main__about {
+    height: 100vh;
+    background-image: url(/img/bg-about.jpg);
+    display: flex;
+    justify-content: center; }
+    .main__about-content {
+      height: 40rem;
+      width: 70rem;
+      align-items: center;
+      margin-top: 10rem;
+      justify-content: space-evenly; }
+      .main__about-content h1 {
+        line-height: 1; }
+      .main__about-content p {
+        width: 55rem; }

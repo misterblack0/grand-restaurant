@@ -1,0 +1,33 @@
+/* .flow {
+  --flow-space: 1em;
+}  
+
+.flow > * + * { 
+  margin-top: var(--flow-space);
+}
+
+.bg-primary {
+  background: ;
+}
+
+.bg-secondary {
+  background: ;
+}
+
+.color-primary {
+  color: ;
+}
+
+.color-secondary {
+  color: ;
+}
+ */
+
+ .flow {
+   margin: 0 25%;
+ }
+
+ .flex-c {
+   display: flex;
+   flex-direction: column;
+ }
