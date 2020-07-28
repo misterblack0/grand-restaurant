@@ -1,11 +1,4 @@
 :root {
-  --color-primary: ;
-  --color-primary-light: ;
-  --color-primary-dark: ;
-  --color-secondary: ;
-  --color-secondary-light: ;
-  --color-tertiary: ;
-  --color-tertiary-light: ;
   --color-grey-dark: #777;
   --color-grey-dark-2: #888;
   --color-grey-dark-3: #333;
@@ -104,30 +97,6 @@ body {
 .paragraph {
   font-size: 1.3rem; }
 
-/* .flow {
-  --flow-space: 1em;
-}  
-
-.flow > * + * { 
-  margin-top: var(--flow-space);
-}
-
-.bg-primary {
-  background: ;
-}
-
-.bg-secondary {
-  background: ;
-}
-
-.color-primary {
-  color: ;
-}
-
-.color-secondary {
-  color: ;
-}
- */
 .flow {
   margin: 0 25%; }
 
@@ -289,7 +258,7 @@ body {
       height: auto;
       overflow: hidden; }
       .blog__article--img img {
-        transition: transform .5s ease; }
+        transition: transform 0.5s ease; }
       .blog__article--img:hover img {
         transform: scale(1.15); }
     .blog__article--title {
@@ -298,3 +267,59 @@ body {
         text-decoration: none;
         color: #000;
         font-weight: 600; }
+
+.contact {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+  padding-bottom: 5rem; }
+  .contact__img {
+    width: 70%; }
+  .contact__form {
+    height: 40rem;
+    text-align: center;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center; }
+    .contact__form a {
+      font-size: 1.3rem;
+      font-weight: 600;
+      padding: 1rem 2rem; }
+
+.footer {
+  height: 35rem;
+  background-image: url(/img/bg-pattern-2.jpg);
+  background-repeat: repeat;
+  justify-content: space-around;
+  align-items: center; }
+  .footer__contact {
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 25%; }
+    .footer__contact img {
+      height: 30%; }
+    .footer__contact p {
+      color: #888887; }
+  .footer__social {
+    height: 5rem;
+    width: 100%;
+    border-top: 1px solid #636361;
+    padding: 0 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .footer__social--copyright p {
+      color: #888887; }
+    .footer__social--icons {
+      width: 10rem;
+      display: flex;
+      justify-content: space-evenly; }
+
+.icon {
+  height: 2rem;
+  width: 2rem;
+  fill: #888887; }
+  .icon:hover {
+    transition: fill 0.3s;
+    fill: #fff; }
