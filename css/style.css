@@ -273,9 +273,28 @@ body {
       width: 55rem; }
 
 .blog {
-  margin-top: -10rem; }
+  margin-top: -25rem; }
   .blog h1 {
     font-size: 3.5rem;
     font-weight: 500;
     color: white;
     text-align: center; }
+  .blog__articles {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-evenly; }
+  .blog__article {
+    margin: 0 1rem; }
+    .blog__article--img {
+      height: auto;
+      overflow: hidden; }
+      .blog__article--img img {
+        transition: transform .5s ease; }
+      .blog__article--img:hover img {
+        transform: scale(1.15); }
+    .blog__article--title {
+      padding-top: 2rem; }
+      .blog__article--title a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 600; }

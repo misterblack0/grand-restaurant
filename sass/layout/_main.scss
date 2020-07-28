@@ -92,12 +92,47 @@
 }
 
 .blog {
-  margin-top: -10rem;
+  margin-top: -25rem;
 
   & h1 {
     font-size: 3.5rem;
     font-weight: 500;
     color: white;
     text-align: center;
+  }
+
+  &__articles {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__article {
+    margin: 0 1rem;
+
+    &--img {
+
+
+      height: auto;
+      overflow: hidden;
+
+      & img {
+        transition: transform .5s ease;
+      }
+
+      &:hover img {
+        transform: scale(1.15);
+      }
+    }
+
+    &--title {
+      padding-top: 2rem;
+
+      & a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 600;
+      }
+    }
   }
 }
